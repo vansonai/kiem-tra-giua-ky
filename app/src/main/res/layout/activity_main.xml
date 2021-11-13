@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:textAlignment="center"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#00008B"
+        android:text="Trình nghe nhạc"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="155dp"
+        android:padding="5dp"
+        android:text="Nghe Nhạc"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/TxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="158dp"
+        android:padding="5dp"
+        android:text="Tên bài"
+        android:textSize="30dp"
+
+        />
+
+    <TextView
+        android:id="@+id/TxtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="392dp"
+        android:text="00:00"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginBottom="49dp"
+        android:text="play"
+        android:onClick="playSong"/>
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="295dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="49dp"
+        android:text="pause"
+        android:onClick="pauseSong"/>
+
+    <Button
+        android:id="@+id/ButtonSelect"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="49dp"
+        android:text="chọn bài"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
